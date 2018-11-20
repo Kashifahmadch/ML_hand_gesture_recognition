@@ -1,0 +1,10 @@
+% load net
+
+
+
+label
+function [hello] = test_neural(img_name,j)
+load('Neural_small.net');
+img = imread(img_name{j});
+[label,score] = classify(net,img);
+end

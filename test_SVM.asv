@@ -1,0 +1,10 @@
+%testing a single thingy
+
+function test_SVM(img_name,i)
+load(SVM_classifier)
+
+ %img=imread('hello_test.jpg');
+ testFeatures = extractHOGFeatures(img, 'CellSize', cellSize);
+hello = predict(classifier, testFeatures);
+hello
+end
